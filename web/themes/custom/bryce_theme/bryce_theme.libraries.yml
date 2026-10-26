@@ -1,0 +1,18 @@
+google-fonts:
+  remote: https://fonts.google.com
+  license:
+    name: SIL Open Font License 1.1
+    url: https://scripts.sil.org/OFL
+    gpl-compatible: true
+  css:
+    base:
+      https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Orbitron:wght@500;600;700;800&family=Share+Tech+Mono&display=swap:
+        type: external
+        min-invalidation: none
+
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+  dependencies:
+    - bryce_theme/google-fonts

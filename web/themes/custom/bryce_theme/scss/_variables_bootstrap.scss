@@ -1,0 +1,100 @@
+// Tech / edgy Bootstrap 5 overrides. Loaded before Bootstrap so !default
+// values in the library pick these up.
+
+$white: #f4f7fb;
+$gray-100: #e6edf5;
+$gray-200: #c5d0dc;
+$gray-300: #8b9bb0;
+$gray-400: #6b7c93;
+$gray-500: #4d5d73;
+$gray-600: #354357;
+$gray-700: #1c2433;
+$gray-800: #121821;
+$gray-900: #0a0e14;
+$black: #030409;
+
+$primary: #00e5ff;
+$secondary: #ff2d95;
+$success: #3dff9a;
+$info: #7c5cff;
+$warning: #ffe14d;
+$danger: #ff4d6d;
+$light: #d7e3f0;
+$dark: #05070c;
+
+$body-bg: #07090f;
+$body-color: #c5d0dc;
+$body-secondary-color: #8b9bb0;
+$body-tertiary-bg: #10151f;
+$body-emphasis-color: #f4f7fb;
+
+$link-color: $primary;
+$link-hover-color: #7affff;
+$link-decoration: none;
+$link-hover-decoration: none;
+
+$font-family-sans-serif: "Exo 2", system-ui, -apple-system, "Segoe UI", sans-serif;
+$font-family-monospace: "Share Tech Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$headings-font-family: "Orbitron", "Exo 2", sans-serif;
+$headings-font-weight: 700;
+$headings-color: $white;
+$headings-letter-spacing: 0.06em;
+$font-size-base: 1.05rem;
+$line-height-base: 1.65;
+
+$border-radius: 0.15rem;
+$border-radius-sm: 0.1rem;
+$border-radius-lg: 0.25rem;
+$border-radius-pill: 0.2rem;
+$border-color: rgba($primary, 0.22);
+$enable-shadows: true;
+$enable-gradients: false;
+$enable-reduced-motion: true;
+
+$box-shadow: 0 0 0 1px rgba($primary, 0.12), 0 18px 40px rgba(0, 0, 0, 0.45);
+$box-shadow-sm: 0 0 0 1px rgba($primary, 0.1);
+$box-shadow-lg: 0 0 24px rgba($primary, 0.18), 0 24px 48px rgba(0, 0, 0, 0.55);
+
+$navbar-dark-color: rgba($white, 0.78);
+$navbar-dark-hover-color: $primary;
+$navbar-dark-active-color: $primary;
+$navbar-dark-brand-color: $white;
+$navbar-dark-brand-hover-color: $primary;
+$navbar-padding-y: 0.9rem;
+
+$nav-link-font-weight: 600;
+
+$card-bg: #0e131c;
+$card-color: $body-color;
+$card-border-color: rgba($primary, 0.22);
+$card-cap-bg: rgba($primary, 0.06);
+
+$input-bg: #0a0e16;
+$input-color: $white;
+$input-border-color: rgba($primary, 0.28);
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: 0 0 0 0.2rem rgba($primary, 0.2);
+$input-placeholder-color: $gray-400;
+
+$dropdown-bg: #10151f;
+$dropdown-color: $body-color;
+$dropdown-link-color: $body-color;
+$dropdown-link-hover-bg: rgba($primary, 0.12);
+$dropdown-link-hover-color: $primary;
+$dropdown-border-color: rgba($primary, 0.25);
+
+$table-bg: transparent;
+$table-color: $body-color;
+$table-border-color: rgba($primary, 0.16);
+$table-striped-bg: rgba($primary, 0.05);
+$table-hover-bg: rgba($secondary, 0.08);
+
+$pagination-bg: #0e131c;
+$pagination-border-color: rgba($primary, 0.22);
+$pagination-hover-bg: rgba($primary, 0.12);
+$pagination-hover-color: $primary;
+$pagination-active-bg: $primary;
+$pagination-active-color: $dark;
+
+$legend-font-size: 1rem;
+$table-cell-padding-x: 0.75rem;

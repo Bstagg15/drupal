@@ -1,0 +1,25 @@
+@import 'variables_drupal';
+@import 'variables_bootstrap';
+@import '../../../../themes/contrib/bootstrap5/scss/root';
+
+.ck-content {
+  font-family: $font-family-sans-serif;
+  color: $body-color;
+  background: $body-bg;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
+    color: $headings-color;
+    letter-spacing: $headings-letter-spacing;
+  }
+
+  a {
+    color: $link-color;
+  }
+
+  code,
+  pre {
+    font-family: $font-family-monospace;
+    color: $primary;
+  }
+}

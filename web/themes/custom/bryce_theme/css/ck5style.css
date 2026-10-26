@@ -1,0 +1,198 @@
+:root,
+[data-bs-theme=light] {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #030409;
+  --bs-white: #f4f7fb;
+  --bs-gray: #354357;
+  --bs-gray-dark: #121821;
+  --bs-gray-100: #e6edf5;
+  --bs-gray-200: #c5d0dc;
+  --bs-gray-300: #8b9bb0;
+  --bs-gray-400: #6b7c93;
+  --bs-gray-500: #4d5d73;
+  --bs-gray-600: #354357;
+  --bs-gray-700: #1c2433;
+  --bs-gray-800: #121821;
+  --bs-gray-900: #0a0e14;
+  --bs-primary: #00e5ff;
+  --bs-secondary: #ff2d95;
+  --bs-success: #3dff9a;
+  --bs-info: #7c5cff;
+  --bs-warning: #ffe14d;
+  --bs-danger: #ff4d6d;
+  --bs-light: #d7e3f0;
+  --bs-dark: #05070c;
+  --bs-primary-rgb: 0, 229, 255;
+  --bs-secondary-rgb: 255, 45, 149;
+  --bs-success-rgb: 61, 255, 154;
+  --bs-info-rgb: 124, 92, 255;
+  --bs-warning-rgb: 255, 225, 77;
+  --bs-danger-rgb: 255, 77, 109;
+  --bs-light-rgb: 215, 227, 240;
+  --bs-dark-rgb: 5, 7, 12;
+  --bs-primary-text-emphasis: rgb(0%, 35.9215686275%, 40%);
+  --bs-secondary-text-emphasis: rgb(40%, 7.0588235294%, 23.3725490196%);
+  --bs-success-text-emphasis: rgb(9.568627451%, 40%, 24.1568627451%);
+  --bs-info-text-emphasis: rgb(19.4509803922%, 14.431372549%, 40%);
+  --bs-warning-text-emphasis: rgb(40%, 35.2941176471%, 12.0784313725%);
+  --bs-danger-text-emphasis: rgb(40%, 12.0784313725%, 17.0980392157%);
+  --bs-light-text-emphasis: #1c2433;
+  --bs-dark-text-emphasis: #1c2433;
+  --bs-primary-bg-subtle: rgb(80%, 97.9607843137%, 100%);
+  --bs-secondary-bg-subtle: rgb(100%, 83.5294117647%, 91.6862745098%);
+  --bs-success-bg-subtle: rgb(84.7843137255%, 100%, 92.0784313725%);
+  --bs-info-bg-subtle: rgb(89.7254901961%, 87.2156862745%, 100%);
+  --bs-warning-bg-subtle: rgb(100%, 97.6470588235%, 86.0392156863%);
+  --bs-danger-bg-subtle: rgb(100%, 86.0392156863%, 88.5490196078%);
+  --bs-light-bg-subtle: #edf2f8;
+  --bs-dark-bg-subtle: #6b7c93;
+  --bs-primary-border-subtle: rgb(60%, 95.9215686275%, 100%);
+  --bs-secondary-border-subtle: rgb(100%, 67.0588235294%, 83.3725490196%);
+  --bs-success-border-subtle: rgb(69.568627451%, 100%, 84.1568627451%);
+  --bs-info-border-subtle: rgb(79.4509803922%, 74.431372549%, 100%);
+  --bs-warning-border-subtle: rgb(100%, 95.2941176471%, 72.0784313725%);
+  --bs-danger-border-subtle: rgb(100%, 72.0784313725%, 77.0980392157%);
+  --bs-light-border-subtle: #c5d0dc;
+  --bs-dark-border-subtle: #4d5d73;
+  --bs-white-rgb: 244, 247, 251;
+  --bs-black-rgb: 3, 4, 9;
+  --bs-font-sans-serif: "Exo 2", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bs-font-monospace: "Share Tech Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(244, 247, 251, 0.15), rgba(244, 247, 251, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1.05rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.65;
+  --bs-body-color: #c5d0dc;
+  --bs-body-color-rgb: 197, 208, 220;
+  --bs-body-bg: #07090f;
+  --bs-body-bg-rgb: 7, 9, 15;
+  --bs-emphasis-color: #f4f7fb;
+  --bs-emphasis-color-rgb: 244, 247, 251;
+  --bs-secondary-color: #8b9bb0;
+  --bs-secondary-color-rgb: 139, 155, 176;
+  --bs-secondary-bg: #c5d0dc;
+  --bs-secondary-bg-rgb: 197, 208, 220;
+  --bs-tertiary-color: rgba(197, 208, 220, 0.5);
+  --bs-tertiary-color-rgb: 197, 208, 220;
+  --bs-tertiary-bg: #10151f;
+  --bs-tertiary-bg-rgb: 16, 21, 31;
+  --bs-heading-color: #f4f7fb;
+  --bs-link-color: #00e5ff;
+  --bs-link-color-rgb: 0, 229, 255;
+  --bs-link-decoration: none;
+  --bs-link-hover-color: #7affff;
+  --bs-link-hover-color-rgb: 122, 255, 255;
+  --bs-link-hover-decoration: none;
+  --bs-code-color: #d63384;
+  --bs-highlight-color: #c5d0dc;
+  --bs-highlight-bg: rgb(100%, 95.137254902%, 80.5490196078%);
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: rgba(0, 229, 255, 0.22);
+  --bs-border-color-translucent: rgba(3, 4, 9, 0.175);
+  --bs-border-radius: 0.15rem;
+  --bs-border-radius-sm: 0.1rem;
+  --bs-border-radius-lg: 0.25rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-xxl: 2rem;
+  --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+  --bs-border-radius-pill: 0.2rem;
+  --bs-box-shadow: 0 0 0 1px rgba(0, 229, 255, 0.12), 0 18px 40px rgba(0, 0, 0, 0.45);
+  --bs-box-shadow-sm: 0 0 0 1px rgba(0, 229, 255, 0.1);
+  --bs-box-shadow-lg: 0 0 24px rgba(0, 229, 255, 0.18), 0 24px 48px rgba(0, 0, 0, 0.55);
+  --bs-box-shadow-inset: inset 0 1px 2px rgba(3, 4, 9, 0.075);
+  --bs-focus-ring-width: 0.25rem;
+  --bs-focus-ring-opacity: 0.25;
+  --bs-focus-ring-color: rgba(0, 229, 255, 0.25);
+  --bs-form-valid-color: #3dff9a;
+  --bs-form-valid-border-color: #3dff9a;
+  --bs-form-invalid-color: #ff4d6d;
+  --bs-form-invalid-border-color: #ff4d6d;
+}
+
+[data-bs-theme=dark] {
+  color-scheme: dark;
+  --bs-body-color: #8b9bb0;
+  --bs-body-color-rgb: 139, 155, 176;
+  --bs-body-bg: #0a0e14;
+  --bs-body-bg-rgb: 10, 14, 20;
+  --bs-emphasis-color: #f4f7fb;
+  --bs-emphasis-color-rgb: 244, 247, 251;
+  --bs-secondary-color: rgba(139, 155, 176, 0.75);
+  --bs-secondary-color-rgb: 139, 155, 176;
+  --bs-secondary-bg: #121821;
+  --bs-secondary-bg-rgb: 18, 24, 33;
+  --bs-tertiary-color: rgba(139, 155, 176, 0.5);
+  --bs-tertiary-color-rgb: 139, 155, 176;
+  --bs-tertiary-bg: rgb(5.4901960784%, 7.4509803922%, 10.3921568627%);
+  --bs-tertiary-bg-rgb: 14, 19, 27;
+  --bs-primary-text-emphasis: rgb(40%, 93.8823529412%, 100%);
+  --bs-secondary-text-emphasis: rgb(100%, 50.5882352941%, 75.0588235294%);
+  --bs-success-text-emphasis: rgb(54.3529411765%, 100%, 76.2352941176%);
+  --bs-info-text-emphasis: rgb(69.1764705882%, 61.6470588235%, 100%);
+  --bs-warning-text-emphasis: rgb(100%, 92.9411764706%, 58.1176470588%);
+  --bs-danger-text-emphasis: rgb(100%, 58.1176470588%, 65.6470588235%);
+  --bs-light-text-emphasis: #e6edf5;
+  --bs-dark-text-emphasis: #8b9bb0;
+  --bs-primary-bg-subtle: rgb(0%, 17.9607843137%, 20%);
+  --bs-secondary-bg-subtle: rgb(20%, 3.5294117647%, 11.6862745098%);
+  --bs-success-bg-subtle: rgb(4.7843137255%, 20%, 12.0784313725%);
+  --bs-info-bg-subtle: rgb(9.7254901961%, 7.2156862745%, 20%);
+  --bs-warning-bg-subtle: rgb(20%, 17.6470588235%, 6.0392156863%);
+  --bs-danger-bg-subtle: rgb(20%, 6.0392156863%, 8.5490196078%);
+  --bs-light-bg-subtle: #121821;
+  --bs-dark-bg-subtle: rgb(4.1176470588%, 5.4901960784%, 8.2352941176%);
+  --bs-primary-border-subtle: rgb(0%, 53.8823529412%, 60%);
+  --bs-secondary-border-subtle: rgb(60%, 10.5882352941%, 35.0588235294%);
+  --bs-success-border-subtle: rgb(14.3529411765%, 60%, 36.2352941176%);
+  --bs-info-border-subtle: rgb(29.1764705882%, 21.6470588235%, 60%);
+  --bs-warning-border-subtle: rgb(60%, 52.9411764706%, 18.1176470588%);
+  --bs-danger-border-subtle: rgb(60%, 18.1176470588%, 25.6470588235%);
+  --bs-light-border-subtle: #1c2433;
+  --bs-dark-border-subtle: #121821;
+  --bs-heading-color: inherit;
+  --bs-link-color: rgb(40%, 93.8823529412%, 100%);
+  --bs-link-hover-color: rgb(52%, 95.1058823529%, 100%);
+  --bs-link-color-rgb: 102, 239, 255;
+  --bs-link-hover-color-rgb: 133, 243, 255;
+  --bs-code-color: rgb(90.3529411765%, 52%, 71.0588235294%);
+  --bs-highlight-color: #8b9bb0;
+  --bs-highlight-bg: rgb(40%, 30.2745098039%, 1.0980392157%);
+  --bs-border-color: #1c2433;
+  --bs-border-color-translucent: rgba(244, 247, 251, 0.15);
+  --bs-form-valid-color: rgb(45.8823529412%, 71.7647058824%, 59.7647058824%);
+  --bs-form-valid-border-color: rgb(45.8823529412%, 71.7647058824%, 59.7647058824%);
+  --bs-form-invalid-color: rgb(91.7647058824%, 52.4705882353%, 56.2352941176%);
+  --bs-form-invalid-border-color: rgb(91.7647058824%, 52.4705882353%, 56.2352941176%);
+}
+
+.ck-content {
+  font-family: "Exo 2", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #c5d0dc;
+  background: #07090f;
+}
+.ck-content h1, .ck-content h2, .ck-content h3, .ck-content h4, .ck-content h5, .ck-content h6 {
+  font-family: "Orbitron", "Exo 2", sans-serif;
+  color: #f4f7fb;
+  letter-spacing: 0.06em;
+}
+.ck-content a {
+  color: #00e5ff;
+}
+.ck-content code,
+.ck-content pre {
+  font-family: "Share Tech Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: #00e5ff;
+}
+
+/*# sourceMappingURL=ck5style.css.map */

@@ -1,0 +1,266 @@
+// Custom tech / edgy layer on top of Bootstrap.
+
+:root {
+  --bryce-grid: rgba(0, 229, 255, 0.045);
+  --bryce-glow: 0 0 18px rgba(0, 229, 255, 0.45);
+  --bryce-magenta: #{$secondary};
+}
+
+html {
+  background: $body-bg;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: $body-bg;
+  background-image:
+    linear-gradient(180deg, rgba(255, 45, 149, 0.07), transparent 28%),
+    linear-gradient(var(--bryce-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bryce-grid) 1px, transparent 1px),
+    radial-gradient(1200px 500px at 90% -10%, rgba(0, 229, 255, 0.16), transparent 55%);
+  background-size: auto, 48px 48px, 48px 48px, auto;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.015),
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.35;
+}
+
+.theme-frame {
+  pointer-events: none;
+  position: fixed;
+  inset: 10px;
+  z-index: 3000;
+  border: 1px solid rgba($primary, 0.28);
+  box-shadow: inset 0 0 40px rgba($primary, 0.05);
+}
+
+.theme-frame::before,
+.theme-frame::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 2px solid $primary;
+  box-shadow: var(--bryce-glow);
+}
+
+.theme-frame::before {
+  top: -1px;
+  left: -1px;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.theme-frame::after {
+  right: -1px;
+  bottom: -1px;
+  border-left: 0;
+  border-top: 0;
+}
+
+h1, h2, h3, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  text-shadow: 0 0 22px rgba($primary, 0.28);
+}
+
+h1, .page-title {
+  position: relative;
+  padding-bottom: 0.45rem;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 7rem;
+    height: 2px;
+    margin-top: 0.55rem;
+    background: linear-gradient(90deg, $primary, $secondary);
+    box-shadow: var(--bryce-glow);
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid rgba($primary, 0.28);
+  background:
+    linear-gradient(90deg, rgba($secondary, 0.12), transparent 35%, rgba($primary, 0.1)),
+    rgba(5, 7, 12, 0.92) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar .nav-link {
+  font-family: $font-family-monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link.is-active {
+  color: $primary !important;
+  text-shadow: var(--bryce-glow);
+}
+
+.navbar-brand .site-title {
+  font-family: $headings-font-family;
+}
+
+.navbar-brand .site-slogan {
+  font-family: $font-family-monospace;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $primary !important;
+  opacity: 0.8;
+}
+
+.navbar-brand img,
+.navbar-brand svg {
+  filter: drop-shadow(0 0 8px rgba($primary, 0.7));
+}
+
+.btn {
+  font-family: $font-family-monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: $border-radius;
+}
+
+.btn-primary {
+  color: $dark;
+  box-shadow: 0 0 16px rgba($primary, 0.35);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: $dark;
+  box-shadow: 0 0 24px rgba($primary, 0.55);
+}
+
+.btn-secondary {
+  color: $white;
+  box-shadow: 0 0 16px rgba($secondary, 0.3);
+}
+
+.btn-outline-primary {
+  box-shadow: inset 0 0 0 1px rgba($primary, 0.4);
+}
+
+.card,
+.region-sidebar-first .block,
+.region-sidebar-second .block,
+.region-content .block-system-main-block article {
+  background: $card-bg;
+  border: 1px solid rgba($primary, 0.22);
+  box-shadow: $box-shadow-sm;
+}
+
+.breadcrumb {
+  font-family: $font-family-monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: transparent;
+  padding: 1rem 0 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: $primary;
+  content: "//";
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem 0 3rem;
+}
+
+footer[role="contentinfo"] {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  border-top: 1px solid rgba($primary, 0.28);
+  background:
+    linear-gradient(180deg, rgba($primary, 0.06), transparent 40%),
+    #05070c !important;
+  font-family: $font-family-monospace;
+  letter-spacing: 0.08em;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: $primary;
+  box-shadow: 0 0 0 0.2rem rgba($primary, 0.18), 0 0 18px rgba($primary, 0.2);
+}
+
+code, kbd, pre, samp {
+  font-family: $font-family-monospace;
+  color: $primary;
+}
+
+pre {
+  background: #05070c;
+  border: 1px solid rgba($primary, 0.2);
+  padding: 1rem;
+}
+
+a {
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 10px rgba($primary, 0.45);
+}
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.active,
+.tabs--primary a,
+.tabs--primary a.is-active {
+  font-family: $font-family-monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.messages,
+.alert {
+  border-radius: $border-radius;
+  border-width: 1px;
+}
+
+.skip-link a {
+  background: $primary;
+  color: $dark;
+  font-family: $font-family-monospace;
+  text-transform: uppercase;
+}
+
+.node__meta,
+.submitted {
+  font-family: $font-family-monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: $gray-300;
+}
+
+.region-content img {
+  border: 1px solid rgba($primary, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  a,
+  .btn {
+    transition: none;
+  }
+}
